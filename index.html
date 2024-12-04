@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Image</title>
+    <style>
+        /* Ensure the body and html occupy the full height */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* The container for the image */
+        .full-screen-image {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Style to make the image cover the entire screen */
+        .full-screen-image img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-screen-image">
+        <img src="baby-oil.jpg" alt="Full Screen">
+    </div>
+</body>
+</html>
